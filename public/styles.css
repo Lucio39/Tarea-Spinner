@@ -1,0 +1,75 @@
+body {
+    background-color: rgb(46, 45, 45);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.spinner-image {
+    width: 50px; /* para ajustar el tamaño */
+    height: 50px; /* para ajustar el tamaño */
+    animation: spin 1s linear infinite; /* Aplica la animación infinita */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.hidden {
+    display: none; /* Para ocultar el spinner inicialmente */
+}
+
+button {
+    padding: 5px 10px; 
+    font-size: 16px;   
+    line-height: 1;    
+    cursor: pointer;
+    margin: 0;         
+    border: 2px solid #e7e9ed;     
+    border-radius: 0; /* Bordes cuadrados */
+    background-color: rgb(46, 45, 45); 
+    color: white;      /* Color del texto */
+    display: inline-flex; /* Cambiado a inline-flex para alinear el icono y el texto */
+    align-items: center; /* Alinear verticalmente el icono y el texto */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+.spinner {
+    font-size: 20px; /* tamaño del icono */
+    margin-right: 5px; /* Espacio entre el icono y el texto */
+}
+
+/* Efecto al pasar el mouse */
+button:hover {
+    background-color: #797a7c; /* Color de fondo al pasar el mouse */
+}
+
+#footer {
+    color: #f7f7f5; /* Color del texto debajo del botón */
+    font-size: 14px; /* Tamaño de la fuente */
+    margin-top: 10px; /* Espacio entre el botón y el texto */
+}
+
+.color1{
+    color: rgba(249, 249, 6, 0.922);
+}
+
+
+
+
+
+
+
